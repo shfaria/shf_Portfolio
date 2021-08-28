@@ -1,0 +1,13 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+
+<div>
+    <h3 class="my-5 fw-bold">{{ blog.title }}</h3>
+    <p class="fw-light fs-6">{{ blog.date|date:'M jS Y' }}</p>
+    <br><br>
+    <p>{{ blog.description|safe }}</p>
+
+
+
+{% endblock %}
+</div>

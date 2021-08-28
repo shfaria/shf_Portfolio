@@ -1,0 +1,24 @@
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+
+<div class="row text-center my-3">
+    <h2>SHF has written {{ blog_count.count }} blog{{blogs.count|pluralize}}</h2>
+</div>
+
+<div class="row mb-5 py-3">
+
+    {% for blog in blogs %}
+    <div class="mb-3 p-2">       
+        <a href="{% url 'blog:detail' blog.id %}">
+            <h3 class="pb-2">{{ blog.title }}</h3>
+            <p>{{ blog.date|date:'M d Y' }}</p>
+            <!-- <p>{{ blog.description|safe|truncatechars:200 }}</p> use this to show the tags -->
+            <p>{{ blog.description|striptags|truncatechars:200 }}</p>
+            <!-- this line will strip tags -->
+        </a>
+    </div>
+    {% endfor %}
+    {% endblock %}
+</div>
+</div>

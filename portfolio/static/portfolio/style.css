@@ -1,0 +1,29 @@
+body{
+    background-color: floralwhite; 
+}
+
+.container{
+    min-height: 800px;
+}
+.nav-item{
+    margin-left: 5px;
+}
+.footer {
+    background-color: rgba(156, 153, 153, 0.349);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 0.8rem;
+    margin-top: 100px;
+
+    width: 100%;
+
+}
+a, a:hover{
+    text-decoration: none;
+    color: black;
+   
+}
+p{
+    font-size: 1.1rem;
+}
+
