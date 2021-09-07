@@ -1,13 +1,16 @@
 body{
-    background-color: white; 
+    background-color: rgb(201, 115, 115); 
+    color: white;
+    font-family: 'Open Sans', sans-serif;
 }
-
 .container{
     min-height: 800px;
 }
+
 .nav-item{
-    margin-left: 5px;
+    margin-left: 5px;  
 }
+
 .footer {
     background-color: rgba(156, 153, 153, 0.349);
     padding-top: 50px;
@@ -23,7 +26,13 @@ a, a:hover{
     color: black;
    
 }
+a{
+    color: white;
+}
+
 p{
     font-size: 1.1rem;
 }
-
+.navbar-nav.ms-auto.float-end.fs-5 li a{
+    color: rgba(255, 255, 255, 0.705);
+}
